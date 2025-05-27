@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JIJI - Ghibli Cat Token</title>
+  <title>JIJI - Ghibli Cat Jiji</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -13,23 +13,24 @@
       overflow-x: hidden;
     }
     header {
-      padding: 2rem;
+      padding: 2rem 2rem 1rem;
       text-align: center;
       background: rgba(0, 0, 0, 0.5);
       backdrop-filter: blur(10px);
-      position: relative;
     }
-    header img.logo {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      width: 60px;
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .logo-container img {
+      width: 80px;
       height: auto;
-      border-radius: 10px;
+      border-radius: 15px;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       animation: float 3s ease-in-out infinite;
     }
     header p {
@@ -85,12 +86,19 @@
       color: #888;
       font-size: 0.9rem;
     }
+    .ca-text {
+      font-size: 0.85rem;
+      word-break: break-all;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="jiji.jpg" alt="JIJI logo" class="logo">
-    <h1>🐾 JIJI - Ghibli Cat</h1>
+    <div class="logo-container">
+      <img src="jiji.jpg" alt="JIJI logo">
+    </div>
+    <h1>🐾 $JIJI - Ghibli Cat</h1>
     <p>スピリチュアル・デゲン meets 魔女宅急便 vibes</p>
   </header>
 
@@ -100,7 +108,7 @@
     </div>
 
     <div class="card">
-      <p><strong>Contract Address (CA):</strong><br>BWRqwR4WynDdnz9ezkSj2Cf3NPLnfrXGpgGCJnb1RxJf</p>
+      <p><strong>Contract Address (CA):</strong><br><span class="ca-text">BWRqwR4WynDdnz9ezkSj2Cf3NPLnfrXGpgGCJnb1RxJf</span></p>
     </div>
 
     <div class="links">
@@ -110,7 +118,7 @@
   </section>
 
   <footer>
-    <p>© 2025 GhibliCat. Not affiliated with Studio Ghibli. Made for the degen soul 🐱✨</p>
+    <p>© 2025 GhibliCatJiji. Not affiliated with Studio Ghibli. Made for the magic soul 🐱✨</p>
   </footer>
 </body>
 </html>
