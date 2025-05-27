@@ -2,48 +2,115 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JIJI - Ghibli Cat Jiji</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JIJI - Ghibli Cat Token</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
-      font-family: 'Courier New', monospace;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      overflow-x: hidden;
     }
-    .glow {
-      text-shadow: 0 0 6px #ffffff33;
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      position: relative;
+    }
+    header img.logo {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 60px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      font-size: 3rem;
+      animation: float 3s ease-in-out infinite;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #ccc;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+      font-size: 1.1rem;
     }
     .card {
       background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(6px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      margin-top: 1rem;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .links a {
+      color: #00ffd5;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid #00ffd5;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .links a:hover {
+      background: #00ffd5;
+      color: #000;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      font-size: 0.9rem;
     }
   </style>
 </head>
-<body class="text-white flex flex-col items-center justify-center min-h-screen p-6">
+<body>
+  <header>
+    <img src="jiji.jpg" alt="JIJI logo" class="logo">
+    <h1>🐾 JIJI - Ghibli Cat</h1>
+    <p>スピリチュアル・デゲン meets 魔女宅急便 vibes</p>
+  </header>
 
-  <!-- JIJI Image (compact, stylish) -->
-  <div class="w-40 h-40 mb-4 rounded-full overflow-hidden border-2 border-white/20 shadow-lg">
-    <img src="jiji.jpg" alt="JIJI Ghibli Cat" class="w-full h-full object-cover" />
-  </div>
+  <section>
+    <div class="card">
+      <p>ジジは一人前の魔女になるための修行中のキキのお供だ。ある時、男の子の誕生日プレゼントに猫のぬいぐるみのふりをすることになった。彼にそっくりな本物の猫のぬいぐるみは、森で迷子になってしまったのだ。ジジにはリリーという白猫のガールフレンドもできた。クレジットでは、ジジとリリーが一緒に子猫を産んだことが描かれている。</p>
+    </div>
 
-  <h1 class="text-3xl font-bold glow mb-2">🐾 JIJI - ジジ 🖤</h1>
-  <p class="text-white/60 text-sm mb-6 italic">GhibliCat</p>
+    <div class="card">
+      <p><strong>Contract Address (CA):</strong><br>BWRqwR4WynDdnz9ezkSj2Cf3NPLnfrXGpgGCJnb1RxJf</p>
+    </div>
 
-  <div class="card p-5 rounded-xl max-w-md text-sm leading-relaxed mb-6">
-    <p>
-      ジジは一人前の魔女になるための修行中のキキのお供だ。ある時、男の子の誕生日プレゼントに猫のぬいぐるみのふりをすることになった。
-      彼にそっくりな本物の猫のぬいぐるみは、森で迷子になってしまったのだ。<br><br>
-      ジジにはリリーという白猫のガールフレンドもできた。クレジットでは、ジジとリリーが一緒に子猫を産んだことが描かれている。
-    </p>
-  </div>
+    <div class="links">
+      <a href="https://t.me/ghiblicatjiji" target="_blank">Join Telegram 🐾</a>
+      <a href="https://dexscreener.com/solana/Bh9DEDJbWqta1ryMazhjGhqkP81tcHFok44diYCcfyhE" target="_blank">View Chart 📈</a>
+    </div>
+  </section>
 
-  <div class="card text-xs p-4 rounded-lg mb-6 w-full max-w-md space-y-2 text-center">
-    <p><strong>CA:</strong> <span class="text-green-300">BWRqwR4WynDdnz9ezkSj2Cf3NPLnfrXGpgGCJnb1RxJf</span></p>
-    <p><a href="https://t.me/ghiblicatjiji" target="_blank" class="text-blue-400 hover:underline">🌐 Join Telegram</a></p>
-    <p><a href="https://dexscreener.com/solana/Bh9DEDJbWqta1ryMazhjGhqkP81tcHFok44diYCcfyhE" target="_blank" class="text-pink-400 hover:underline">📊 View on Dexscreener</a></p>
-  </div>
-
-  <footer class="text-xs text-white/40">© 2025 JIJI - GhibliCatJiji Token. Built with magic ✨</footer>
+  <footer>
+    <p>© 2025 GhibliCat. Not affiliated with Studio Ghibli. Made for the degen soul 🐱✨</p>
+  </footer>
 </body>
 </html>
