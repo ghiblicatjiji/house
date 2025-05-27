@@ -7,30 +7,43 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      background: radial-gradient(circle, #1f1f1f, #0a0a0a);
+      background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
       font-family: 'Courier New', monospace;
     }
-    .ghibli-text {
-      text-shadow: 1px 1px 2px #fff2;
+    .glow {
+      text-shadow: 0 0 6px #ffffff33;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
   </style>
 </head>
-<body class="text-white flex flex-col items-center justify-center min-h-screen px-4 py-10">
-  
-  <!-- JiJi -->
-  <img src="jiji.jpg" alt="JIJI Ghibli Cat" class="w-60 h-auto mb-6 rounded-xl shadow-lg hover:scale-105 transition-all duration-300" />
+<body class="text-white flex flex-col items-center justify-center min-h-screen p-6">
 
-  <h1 class="text-4xl font-bold ghibli-text mb-4">🐾 JIJI - ジジ 🐾</h1>
-  <p class="max-w-xl text-center text-lg leading-relaxed mb-8">
-    ジジは一人前の魔女になるための修行中のキキのお供だ。ある時、男の子の誕生日プレゼントに猫のぬいぐるみのふりをすることになった。彼にそっくりな本物の猫のぬいぐるみは、森で迷子になってしまったのだ。ジジにはリリーという白猫のガールフレンドもできた。クレジットでは、ジジとリリーが一緒に子猫を産んだことが描かれている。
-  </p>
-
-  <div class="bg-black/30 backdrop-blur-md border border-white/10 p-4 rounded-xl text-sm text-center space-y-2 mb-10">
-    <p><strong>Contract (CA):</strong> <code class="text-green-400">BWRqwR4WynDdnz9ezkSj2Cf3NPLnfrXGpgGCJnb1RxJf</code></p>
-    <p><a href="https://t.me/ghiblicatjiji" target="_blank" class="text-blue-400 underline hover:text-blue-300">🌐 Join Telegram</a></p>
-    <p><a href="https://dexscreener.com/solana/Bh9DEDJbWqta1ryMazhjGhqkP81tcHFok44diYCcfyhE" target="_blank" class="text-pink-400 underline hover:text-pink-300">📊 Chart on Dexscreener</a></p>
+  <!-- JIJI Image (compact, stylish) -->
+  <div class="w-40 h-40 mb-4 rounded-full overflow-hidden border-2 border-white/20 shadow-lg">
+    <img src="jiji.jpg" alt="JIJI Ghibli Cat" class="w-full h-full object-cover" />
   </div>
 
-  <footer class="text-xs text-white/60">© 2025 $JIJI - GhibliCat Token. Built with love 🖤</footer>
+  <h1 class="text-3xl font-bold glow mb-2">🐾 JIJI - ジジ 🖤</h1>
+  <p class="text-white/60 text-sm mb-6 italic">GhibliCat</p>
+
+  <div class="card p-5 rounded-xl max-w-md text-sm leading-relaxed mb-6">
+    <p>
+      ジジは一人前の魔女になるための修行中のキキのお供だ。ある時、男の子の誕生日プレゼントに猫のぬいぐるみのふりをすることになった。
+      彼にそっくりな本物の猫のぬいぐるみは、森で迷子になってしまったのだ。<br><br>
+      ジジにはリリーという白猫のガールフレンドもできた。クレジットでは、ジジとリリーが一緒に子猫を産んだことが描かれている。
+    </p>
+  </div>
+
+  <div class="card text-xs p-4 rounded-lg mb-6 w-full max-w-md space-y-2 text-center">
+    <p><strong>CA:</strong> <span class="text-green-300">BWRqwR4WynDdnz9ezkSj2Cf3NPLnfrXGpgGCJnb1RxJf</span></p>
+    <p><a href="https://t.me/ghiblicatjiji" target="_blank" class="text-blue-400 hover:underline">🌐 Join Telegram</a></p>
+    <p><a href="https://dexscreener.com/solana/Bh9DEDJbWqta1ryMazhjGhqkP81tcHFok44diYCcfyhE" target="_blank" class="text-pink-400 hover:underline">📊 View on Dexscreener</a></p>
+  </div>
+
+  <footer class="text-xs text-white/40">© 2025 JIJI - GhibliCatJiji Token. Built with magic ✨</footer>
 </body>
 </html>
